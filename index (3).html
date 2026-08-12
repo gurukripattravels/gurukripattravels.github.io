@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guru Kripa Tour & Travels, Gaya (Bihar) — AC Sedan, SUV & Innova Crysta booking. Local Trip, Outstation, Shaadi, Teerth Yatra, Airport Drop. 24x7 Seva. Call 9934290558">
+<title>Guru Kripa Tour &amp; Travels — Gaya, Bihar | Taxi Booking, Outstation, Teerth Yatra</title>
+
+<!-- Favicon (emoji-based, works offline) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚗%3C/text%3E%3C/svg%3E">
+
+<!-- Google Fonts: Poppins only -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================
+   GURU KRIPA TOUR & TRAVELS — STYLES
+   Colors badalne ke liye sirf neeche ke CSS VARIABLES badlein
+   ========================================================== */
+:root{
+  --primary:#0b63d0;        /* main blue */
+  --primary-dark:#084c9f;
+  --primary-soft:#e9f2fd;
+  --accent:#ff7a1a;         /* main orange */
+  --accent-dark:#e86405;
+  --accent-soft:#fff2e6;
+  --green:#25d366;          /* whatsapp green */
+  --text:#16233d;
+  --muted:#5d6c85;
+  --border:#e3eaf3;
+  --bg:#ffffff;
+  --bg-soft:#f4f8fd;
+  --radius:16px;
+  --shadow:0 8px 28px rgba(13,60,120,.10);
+}
+
+/* ---------- Reset & Base ---------- */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  color:var(--text);background:var(--bg);line-height:1.6;
+  padding-bottom:72px; /* floating bar ke liye jagah */
+}
+body.modal-open{overflow:hidden} /* modal khule to page scroll lock */
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;cursor:pointer}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+section{scroll-margin-top:80px} /* sticky header ke neeche chhupe nahi */
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:700;border-radius:999px;font-size:14px;
+  transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-lg{padding:14px 26px;font-size:16px}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+  color:#fff;padding:12px 22px;box-shadow:0 6px 16px rgba(255,122,26,.35)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-primary:disabled{opacity:.75;cursor:wait;transform:none}
+.btn-outline{background:#fff;color:var(--primary);border:2px solid var(--primary);padding:12px 22px}
+.btn-outline:hover{background:var(--primary-soft)}
+
+/* ---------- Sticky Navbar ---------- */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-badge{width:42px;height:42px;border-radius:12px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;font-weight:800;font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 12px rgba(11,99,208,.35)}
+.logo-text{line-height:1.15}
+.logo-text b{font-size:16px;font-weight:800;display:block}
+.logo-text small{font-size:11px;color:var(--accent-dark);font-weight:600;letter-spacing:.3px}
+.nav-actions{display:flex;gap:8px}
+.btn-call{background:#fff;color:var(--primary);border:2px solid var(--primary);padding:8px 14px}
+.btn-wa{background:var(--green);color:#fff;padding:8px 14px;box-shadow:0 4px 12px rgba(37,211,102,.35)}
+@media(max-width:480px){ /* chhote phone par sirf icons */
+  .btn-call .lbl,.btn-wa .lbl{display:none}
+  .btn-call,.btn-wa{padding:8px 10px}
+}
+
+/* ---------- Hero ---------- */
+/* BANNER (background): photo chahiye to .hero ki background property me
+   background:linear-gradient(...), url('YOUR_URL') center/cover; add kar dein */
+.hero{background:linear-gradient(140deg,#eaf3ff 0%,#ffffff 55%,#fff3e8 100%);
+  padding:44px 0 40px;overflow:hidden}
+.hero-in{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.hero-in{grid-template-columns:1.2fr .8fr}}
+.pill{display:inline-block;background:#fff;border:1.5px solid var(--primary-soft);
+  color:var(--primary-dark);font-size:12px;font-weight:600;padding:6px 14px;
+  border-radius:999px;box-shadow:0 2px 8px rgba(11,99,208,.08);margin-bottom:14px}
+.hero h1{font-size:clamp(26px,6.4vw,44px);font-weight:800;line-height:1.25;margin-bottom:14px}
+.hero h1 .hl{color:var(--accent-dark)}
+.hero .sub{color:var(--muted);font-size:15px;max-width:560px;margin-bottom:22px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:480px}
+.stat{background:#fff;border:1px solid var(--border);border-radius:14px;
+  padding:12px 8px;text-align:center;box-shadow:0 4px 14px rgba(13,60,120,.06)}
+.stat b{display:block;font-size:20px;color:var(--primary);font-weight:800}
+.stat span{font-size:11.5px;color:var(--muted);font-weight:500}
+
+/* Hero right-side visual (sirf desktop par) */
+.hero-art{display:none}
+@media(min-width:900px){.hero-art{display:block;text-align:center}}
+.art-card{background:#fff;border-radius:22px;padding:34px 22px;
+  box-shadow:var(--shadow);border:1px solid var(--border)}
+.art-card .big{font-size:84px;display:block;animation:floaty 3s ease-in-out infinite}
+.art-route{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;
+  margin-top:16px;font-size:12px;color:var(--muted);font-weight:600}
+.art-route span{background:var(--bg-soft);border-radius:999px;padding:4px 10px}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ---------- Sections common ---------- */
+.section{padding:56px 0}
+.section.soft{background:var(--bg-soft)}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 34px}
+.sec-head .pill{margin-bottom:10px}
+.sec-head h2{font-size:clamp(22px,5vw,32px);font-weight:800;margin-bottom:8px}
+.sec-head p{color:var(--muted);font-size:14.5px}
+.mini-note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:18px}
+
+/* ---------- Fleet (Vehicle Cards) ---------- */
+.fleet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.vehicle-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:20px 18px;position:relative;cursor:pointer;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s}
+.vehicle-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--primary)}
+.vehicle-card.popular{border-color:var(--accent);box-shadow:0 10px 26px rgba(255,122,26,.16)}
+.pop-badge{position:absolute;top:-11px;right:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+  color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.6px;
+  padding:4px 12px;border-radius:999px;box-shadow:0 4px 10px rgba(255,122,26,.4)}
+.v-icon{width:64px;height:64px;border-radius:16px;background:var(--primary-soft);
+  display:flex;align-items:center;justify-content:center;font-size:34px;
+  margin-bottom:12px;overflow:hidden}
+.v-icon img{width:100%;height:100%;object-fit:cover}
+.vehicle-card h3{font-size:17px;font-weight:800}
+.v-type{font-size:12px;color:var(--primary);font-weight:600;background:var(--primary-soft);
+  padding:2px 10px;border-radius:999px;display:inline-block;margin:6px 0 10px}
+.v-specs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.v-specs span{font-size:11.5px;background:var(--bg-soft);color:var(--muted);
+  border-radius:8px;padding:4px 8px;font-weight:600}
+.v-price{display:flex;align-items:flex-end;justify-content:space-between;
+  border-top:1px dashed var(--border);padding-top:12px;margin-bottom:14px}
+.v-price b{font-size:22px;color:var(--accent-dark);font-weight:800}
+.v-price b small{font-size:12px;color:var(--muted);font-weight:600}
+.v-price>span{font-size:11px;color:var(--muted);font-weight:600;
+  background:var(--accent-soft);padding:3px 8px;border-radius:8px}
+.vehicle-card .btn{width:100%}
+
+/* ---------- Forms (Calculator + Modal) ---------- */
+.calc-card{max-width:680px;margin:0 auto;background:#fff;border-radius:20px;
+  box-shadow:var(--shadow);border:1px solid var(--border);padding:26px 20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:12px 14px;
+  border:1.5px solid var(--border);border-radius:12px;font-family:inherit;
+  font-size:15px;background:#fbfdff;color:var(--text);cursor:pointer}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--primary);outline:none;
+  box-shadow:0 0 0 3px rgba(11,99,208,.14);background:#fff}
+input.invalid,select.invalid,textarea.invalid{border-color:#e23d3d;background:#fff6f6}
+.two-col{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:560px){.two-col{grid-template-columns:1fr 1fr}}
+/* One Way / Round Trip toggle (segmented) */
+.trip-toggle{display:flex;background:var(--bg-soft);border-radius:12px;padding:4px;gap:4px}
+.trip-toggle label{flex:1;text-align:center;font-size:13.5px;font-weight:600;
+  padding:9px 4px;border-radius:9px;cursor:pointer;color:var(--muted);
+  transition:all .15s ease;user-select:none}
+.trip-toggle input{position:absolute;opacity:0;pointer-events:none}
+.trip-toggle label span{display:block;border-radius:7px;padding:2px 4px}
+.trip-toggle input:checked+span{background:#fff;color:var(--primary);
+  box-shadow:0 2px 8px rgba(13,60,120,.14);padding:2px 4px}
+.form-error{display:none;background:#fdecec;color:#c62828;font-size:13px;
+  font-weight:600;border-radius:10px;padding:10px 12px;margin-bottom:12px}
+.form-error.show{display:block}
+.hint{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+
+/* Calculator result */
+.calc-result{margin-top:20px;background:var(--accent-soft);
+  border:1.5px dashed var(--accent);border-radius:16px;padding:18px;text-align:center}
+.hidden{display:none}
+.cr-label{font-size:12px;font-weight:700;letter-spacing:.5px;
+  color:var(--accent-dark);text-transform:uppercase}
+.cr-fare{font-size:38px;font-weight:800;color:var(--text);margin:2px 0 6px;line-height:1.2}
+.cr-line{font-size:13px;color:var(--muted);font-weight:500}
+.cr-note{font-size:12px;color:#8a5a1e;background:#fff;border-radius:8px;
+  padding:8px 10px;margin:12px 0 14px}
+.calc-result .btn{width:100%}
+
+/* ---------- How It Works ---------- */
+.steps{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:26px 18px;text-align:center;position:relative;
+  transition:transform .2s,box-shadow .2s}
+.step-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.step-no{position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  width:28px;height:28px;border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step-ic{font-size:44px;display:block;margin:6px 0 10px}
+.step-card h3{font-size:17px;margin-bottom:6px}
+.step-card p{font-size:13px;color:var(--muted)}
+.steps-btn{text-align:center;margin-top:28px}
+
+/* ---------- Why Choose Us ---------- */
+.why-grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:560px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:920px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px 16px;text-align:center}
+.why-ic{width:54px;height:54px;border-radius:50%;background:var(--primary-soft);
+  font-size:26px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.why-card h3{font-size:15px;margin-bottom:4px}
+.why-card p{font-size:12.5px;color:var(--muted)}
+
+/* ---------- Services ---------- */
+.grp-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin:0 0 12px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.dot-g{background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.18)}
+.dot-o{background:var(--accent);box-shadow:0 0 0 3px rgba(255,122,26,.15)}
+.svc-grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin-bottom:26px}
+@media(min-width:700px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(5,1fr)}}
+.svc-card{background:#fff;border:1.5px solid var(--border);border-radius:14px;
+  padding:16px 12px;text-align:center;position:relative}
+.svc-card .ic{font-size:30px;display:block;margin-bottom:8px}
+.svc-card h3{font-size:13.5px;margin-bottom:2px}
+.svc-card p{font-size:11px;color:var(--muted)}
+.svc-tag{position:absolute;top:-9px;right:8px;font-size:9.5px;font-weight:800;
+  letter-spacing:.4px;padding:3px 9px;border-radius:999px}
+.tag-ok{background:#dcfce7;color:#15803d}
+.tag-soon{background:var(--accent-soft);color:var(--accent-dark)}
+.svc-card.soon{opacity:.7;border-style:dashed;background:#fbfcfe}
+
+/* ---------- Company Details ---------- */
+.reg-card{max-width:760px;margin:0 auto;background:#fff;border-radius:20px;
+  box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--border)}
+.reg-head{background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;padding:20px;text-align:center}
+.reg-head h3{font-size:19px;font-weight:800}
+.reg-head p{font-size:12.5px;opacity:.92}
+.reg-grid{display:grid;grid-template-columns:1fr;padding:6px 0}
+@media(min-width:680px){.reg-grid{grid-template-columns:1fr 1fr;padding:6px}}
+.reg-row{display:flex;gap:12px;align-items:flex-start;padding:12px 20px}
+.reg-row.wide{grid-column:1/-1}
+.reg-ic{font-size:18px;width:34px;height:34px;border-radius:10px;flex-shrink:0;
+  background:var(--bg-soft);display:flex;align-items:center;justify-content:center}
+.reg-row small{display:block;font-size:10.5px;color:var(--muted);font-weight:600;
+  text-transform:uppercase;letter-spacing:.4px}
+.reg-row b{font-size:14px;font-weight:600;word-break:break-word}
+.reg-row a{color:var(--primary);font-weight:600}
+
+/* ---------- Map ---------- */
+.map-wrap{max-width:860px;margin:0 auto;border-radius:18px;overflow:hidden;
+  box-shadow:var(--shadow);border:1px solid var(--border)}
+.map-wrap iframe{width:100%;height:320px;border:0;display:block}
+.map-bar{max-width:860px;margin:14px auto 0;display:flex;gap:12px;
+  align-items:center;justify-content:space-between;flex-wrap:wrap;
+  font-size:13.5px;font-weight:600}
+.map-bar .btn{font-size:13px;padding:10px 18px}
+
+/* ---------- Footer ---------- */
+.footer{background:#0e2242;color:#c9d6ec;padding:44px 0 22px}
+.f-grid{display:grid;gap:26px;grid-template-columns:1fr}
+@media(min-width:760px){.f-grid{grid-template-columns:1.3fr 1fr 1.3fr}}
+.footer h4{color:#fff;font-size:15px;margin-bottom:12px}
+.f-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer p,.footer li{font-size:13px;line-height:1.9}
+.footer ul{list-style:none}
+.footer a:hover{color:#fff}
+.f-contact li{display:flex;gap:8px;align-items:flex-start;margin-bottom:4px}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;
+  padding-top:16px;text-align:center;font-size:11.5px;color:#8fa3c4}
+
+/* ---------- Floating Bottom Bar (3 buttons) ---------- */
+.float-bar{position:fixed;left:0;right:0;bottom:0;z-index:120;background:#fff;
+  border-top:1px solid var(--border);box-shadow:0 -6px 24px rgba(10,30,60,.10);
+  display:flex;gap:8px;padding:8px 10px}
+.fb-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 6px;border-radius:12px;font-weight:700;font-size:14px;color:#fff}
+.fb-book{background:linear-gradient(135deg,var(--accent),var(--accent-dark))}
+.fb-call{background:var(--primary)}
+.fb-wa{background:var(--green)}
+@media(max-width:560px){ /* mobile: sirf icons, equal width */
+  .fb-btn .fb-label{display:none}
+  .fb-btn{font-size:20px;padding:12px 6px}
+}
+
+/* ---------- Booking Modal ---------- */
+.modal-overlay{position:fixed;inset:0;background:rgba(8,22,44,.6);
+  display:none;align-items:flex-start;justify-content:center;
+  padding:20px 12px;z-index:200;overflow-y:auto}
+.modal-overlay.open{display:flex}
+.modal-box{background:#fff;border-radius:20px;width:100%;max-width:480px;
+  margin:auto;box-shadow:0 24px 70px rgba(0,0,0,.3);animation:pop .25s ease}
+@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.97)}}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;
+  gap:10px;padding:18px 20px 14px;border-bottom:1px solid var(--border)}
+.modal-head h3{font-size:18px;font-weight:800}
+.modal-head p{font-size:12.5px;color:var(--muted)}
+.modal-close{width:34px;height:34px;border-radius:50%;background:var(--bg-soft);
+  font-size:18px;color:var(--muted);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center}
+.modal-close:hover{background:#fee2e2;color:#dc2626}
+.modal-body{padding:18px 20px 22px}
+.modal-note{font-size:11.5px;color:var(--muted);text-align:center;margin-top:10px}
+
+/* ---------- Fade-in on scroll ---------- */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== 1. NAVBAR (STICKY) ==================== -->
+<header class="topbar" id="top">
+  <div class="container nav-in">
+    <a class="logo" href="#top" aria-label="Guru Kripa Tour and Travels">
+      <!-- LOGO: Neeche wali "GK" span hata kar apna logo lagayein:
+           <img src="YOUR_URL" alt="Guru Kripa Logo" style="height:44px;border-radius:12px"> -->
+      <span class="logo-badge">GK</span>
+      <span class="logo-text"><b>Guru Kripa</b><small>Tour &amp; Travels</small></span>
+    </a>
+    <nav class="nav-actions">
+      <a class="btn btn-call" href="tel:+919934290558"><span>📞</span><span class="lbl">Call Now</span></a>
+      <a class="btn btn-wa" href="https://wa.me/916203792119"><span>💬</span><span class="lbl">WhatsApp</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ==================== 2. HERO SECTION ==================== -->
+<section class="hero">
+  <div class="container hero-in">
+    <div class="hero-copy reveal">
+      <p class="pill">✅ Gaya (Bihar) Ka Bharosemand Travel Partner</p>
+      <h1>गया से कहीं भी जाना हो —<br><span class="hl">एक कॉल पर गाड़ी हाज़िर!</span> 🚗</h1>
+      <p class="sub">AC Sedan, SUV aur Premium Innova Crysta — Local Trip, Outstation, Shaadi, Teerth Yatra aur Airport Drop ke liye. Verified drivers, saaf-suthri gaadiyan, transparent rates. 24x7 seva!</p>
+      <div class="hero-btns">
+        <button type="button" class="btn btn-primary btn-lg" id="heroBook">🚗 Abhi Book Karein</button>
+        <a class="btn btn-outline btn-lg" href="tel:+919934290558">📞 Direct Call</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>5000+</b><span>Trips Poore Hue</span></div>
+        <div class="stat"><b>4.8 ⭐</b><span>Customer Rating</span></div>
+        <div class="stat"><b>24x7</b><span>Seva Available</span></div>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <!-- BANNER: Yahan hero photo lagayen:
+           <img src="YOUR_URL" alt="Guru Kripa Travels" style="width:100%;border-radius:18px">
+           (neeche ka emoji art hata dein) -->
+      <div class="art-card">
+        <span class="big">🚗💨</span>
+        <div class="art-route">
+          <span>Gaya ➜ Patna</span>
+          <span>Gaya ➜ Varanasi</span>
+          <span>Gaya ➜ Delhi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 3. VEHICLE FLEET ==================== -->
+<section class="section" id="fleet">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">🚘 Hamari Gaadiyan</p>
+      <h2>Har Budget Ke Liye Gaadi</h2>
+      <p>Sab gaadiyan AC, saaf-suthri aur experienced driver ke saath. Rate bilkul seedha — koi chhupa hua charge nahi!</p>
+    </div>
+    <!-- Cards JS se render hote hain (neeche VEHICLES list me photo URL add kar sakte hain) -->
+    <div class="fleet-grid" id="fleetGrid"></div>
+    <noscript><p class="mini-note">Booking ke liye call karein: 📞 9934290558</p></noscript>
+    <p class="mini-note">ℹ️ Sab rates per km hain, minimum charge apply hota hai. Toll/parking extra. 👆 Gaadi par click karke seedha book karein.</p>
+  </div>
+</section>
+
+<!-- ==================== 4. FARE CALCULATOR ==================== -->
+<section class="section soft" id="calculator">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">🧮 Fare Calculator</p>
+      <h2>Apna Kiraya Khud Calculate Karein</h2>
+      <p>Route, gaadi aur distance daaliye — andazan kiraya turant milega!</p>
+    </div>
+    <div class="calc-card reveal">
+      <form id="calcForm" novalidate>
+        <div class="two-col">
+          <div class="field">
+            <label for="cFrom">📍 Kahan Se?</label>
+            <input type="text" id="cFrom" placeholder="jaise: Gaya" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="cTo">📍 Kahan Tak?</label>
+            <input type="text" id="cTo" placeholder="jaise: Patna" autocomplete="off">
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label for="cVehicle">🚘 Gaadi Chunein</label>
+            <select id="cVehicle"></select>
+          </div>
+          <div class="field">
+            <label for="cDist">📏 Distance (KM)</label>
+            <input type="number" id="cDist" placeholder="jaise: 55" min="1" inputmode="decimal">
+          </div>
+        </div>
+        <div class="field">
+          <label>🔄 Trip Type</label>
+          <div class="trip-toggle">
+            <label><input type="radio" name="ctrip" value="One Way" checked><span>One Way</span></label>
+            <label><input type="radio" name="ctrip" value="Round Trip"><span>Round Trip (KM ×2)</span></label>
+          </div>
+        </div>
+        <div class="form-error" id="calcError"></div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%">💰 Kiraya Calculate Karein</button>
+        <p class="hint">💡 Distance Google Maps se dekh kar daal dein — andaza (approx) bhi chalega.</p>
+      </form>
+
+      <!-- Result yahan dikhega -->
+      <div class="calc-result hidden" id="calcResult" aria-live="polite">
+        <p class="cr-label">Andazan Kiraya (Approx)</p>
+        <p class="cr-fare" id="crFare">₹0</p>
+        <p class="cr-line" id="crLine1"></p>
+        <p class="cr-line" id="crLine2"></p>
+        <p class="cr-note">⚠️ Toll, parking aur state tax extra. Final rate thoda alag ho sakta hai.</p>
+        <button type="button" class="btn btn-primary" id="calcBook">🚗 Is Rate Par Book Karein</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. HOW IT WORKS ==================== -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">⚡ Bahut Aasaan</p>
+      <h2>Sirf 3 Steps Me Booking</h2>
+      <p>Na app download, na jhanjhat — form bharo aur nikal pado!</p>
+    </div>
+    <div class="steps">
+      <div class="step-card reveal">
+        <span class="step-no">1</span>
+        <span class="step-ic">📝</span>
+        <h3>Form Bharo</h3>
+        <p>Naam, mobile, route aur date likhein — bas 30 second ka kaam!</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-no">2</span>
+        <span class="step-ic">📞</span>
+        <h3>Call Aayegi</h3>
+        <p>Hamari team turant aapko call karke rate confirm karegi aur gaadi final karegi.</p>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-no">3</span>
+        <span class="step-ic">🚗</span>
+        <h3>Niklo!</h3>
+        <p>Driver sahi time par aapki location par gaadi lekar hazir ho jayega.</p>
+      </div>
+    </div>
+    <div class="steps-btn reveal">
+      <button type="button" class="btn btn-primary btn-lg" id="howBook">🚗 Abhi Book Karein — Bilkul Free!</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 6. WHY CHOOSE US ==================== -->
+<section class="section soft" id="why">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">💎 Bharosa</p>
+      <h2>Guru Kripa Hi Kyun?</h2>
+      <p>Hazaron customers ka bharosa — yeh raha iska raaz:</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ic">👨‍✈️</div>
+        <h3>Verified Drivers</h3>
+        <p>Sab drivers police-verified aur trained — pura bharosa.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic">💰</div>
+        <h3>No Hidden Charges</h3>
+        <p>Jo rate bola, wahi rate. Poora transparent hisaab.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic">⏰</div>
+        <h3>On Time Guaranteed</h3>
+        <p>Hum waqt ke pakkay — train ya flight kabhi miss nahi hogi.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic">🛡️</div>
+        <h3>Insured Vehicles</h3>
+        <p>Har gaadi insured aur fitness-check passed — safar safe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. SERVICES ==================== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">🛎️ Sevaayein</p>
+      <h2>Hum Kya-Kya Karte Hain</h2>
+      <p>Har safar ka full solution — ek hi jagah!</p>
+    </div>
+
+    <h4 class="grp-title reveal"><span class="dot dot-g"></span> Abhi Available</h4>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <span class="svc-tag tag-ok">AVAILABLE ✅</span>
+        <span class="ic">📍</span>
+        <h3>Local Trip</h3>
+        <p>Sheher ke andar — mandir, market, station, hospital</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-tag tag-ok">AVAILABLE ✅</span>
+        <span class="ic">🛣️</span>
+        <h3>Outstation</h3>
+        <p>Patna, Varanasi, Ranchi, Delhi — kahin bhi!</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-tag tag-ok">AVAILABLE ✅</span>
+        <span class="ic">💍</span>
+        <h3>Shaadi / Wedding</h3>
+        <p>Baraat aur guests ka pickup-drop arrangement</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-tag tag-ok">AVAILABLE ✅</span>
+        <span class="ic">🛕</span>
+        <h3>Teerth Yatra</h3>
+        <p>Bodh Gaya, Varanasi, Deoghar, Vaishno Devi</p>
+      </div>
+      <div class="svc-card reveal">
+        <span class="svc-tag tag-ok">AVAILABLE ✅</span>
+        <span class="ic">✈️</span>
+        <h3>Airport Drop</h3>
+        <p>Gaya / Patna airport — time par pickup &amp; drop</p>
+      </div>
+    </div>
+
+    <h4 class="grp-title reveal"><span class="dot dot-o"></span> Jald Aa Raha Hai</h4>
+    <div class="svc-grid">
+      <div class="svc-card soon reveal">
+        <span class="svc-tag tag-soon">🔜 COMING SOON</span>
+        <span class="ic">🎫</span>
+        <h3>Flight Tickets</h3>
+        <p>Saste flight ticket ki booking</p>
+      </div>
+      <div class="svc-card soon reveal">
+        <span class="svc-tag tag-soon">🔜 COMING SOON</span>
+        <span class="ic">🪪</span>
+        <h3>Driving Licence</h3>
+        <p>Naya licence / renewal seva</p>
+      </div>
+      <div class="svc-card soon reveal">
+        <span class="svc-tag tag-soon">🔜 COMING SOON</span>
+        <span class="ic">📄</span>
+        <h3>RC Transfer</h3>
+        <p>Gaadi ke documents ka kaam</p>
+      </div>
+      <div class="svc-card soon reveal">
+        <span class="svc-tag tag-soon">🔜 COMING SOON</span>
+        <span class="ic">🛡️</span>
+        <h3>Insurance</h3>
+        <p>Gaadi ka insurance — best rate par</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. COMPANY DETAILS ==================== -->
+<section class="section soft" id="company">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">🏢 Company Details</p>
+      <h2>Registered &amp; Bharosemand</h2>
+      <p>Guru Kripa Tour &amp; Travels — sarkari registered travel agency, Gaya (Bihar).</p>
+    </div>
+    <div class="reg-card reveal">
+      <div class="reg-head">
+        <h3>🚗 Guru Kripa Tour &amp; Travels</h3>
+        <p>Govt. Registered Travel Agency ✅ • Gaya, Bihar</p>
+      </div>
+      <div class="reg-grid">
+        <div class="reg-row">
+          <span class="reg-ic">👤</span>
+          <div><small>Proprietor</small><b>Sudhir Kumar</b></div>
+        </div>
+        <div class="reg-row">
+          <span class="reg-ic">📜</span>
+          <div><small>REGN. NO</small><b>G.Y 19744</b></div>
+        </div>
+        <div class="reg-row">
+          <span class="reg-ic">🆔</span>
+          <div><small>UDYAM REGN. NO</small><b>UDYAM-BR-12-0034407</b></div>
+        </div>
+        <div class="reg-row">
+          <span class="reg-ic">🧾</span>
+          <div><small>GSTIN</small><b>10BETPK0111E1Z8 (State: 10 - Bihar)</b></div>
+        </div>
+        <div class="reg-row wide">
+          <span class="reg-ic">📍</span>
+          <div><small>Address</small><b>Jagdishpur, Abgila, Manpur, Gaya, Bihar</b></div>
+        </div>
+        <div class="reg-row">
+          <span class="reg-ic">📞</span>
+          <div><small>Phone</small>
+            <b><a href="tel:+919934290558">9934290558</a>, <a href="tel:+918936031504">8936031504</a></b>
+          </div>
+        </div>
+        <div class="reg-row">
+          <span class="reg-ic">💬</span>
+          <div><small>WhatsApp</small>
+            <b><a href="https://wa.me/916203792119">+91 62037 92119</a></b>
+          </div>
+        </div>
+        <div class="reg-row">
+          <span class="reg-ic">✉️</span>
+          <div><small>Email</small>
+            <b><a href="mailto:sudhansuraj58355@gmail.com">sudhansuraj58355@gmail.com</a></b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 9. GOOGLE MAP ==================== -->
+<section class="section" id="location">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="pill">📍 Hamara Pata</p>
+      <h2>Gaya, Bihar Me Milte Hain</h2>
+      <p>Office ka exact location yahan dekh sakte hain:</p>
+    </div>
+    <div class="map-wrap reveal">
+      <!-- MAP: Exact office pin ke liye — Google Maps me apna location kholein →
+           Share → "Embed a map" → jo iframe src mile use yahan replace kar dein -->
+      <iframe title="Guru Kripa Tour and Travels - Gaya, Bihar"
+        src="https://maps.google.com/maps?q=Jagdishpur%2C%20Abgila%2C%20Manpur%2C%20Gaya%2C%20Bihar&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="map-bar reveal">
+      <span>📍 Jagdishpur, Abgila, Manpur, Gaya, Bihar</span>
+      <a class="btn btn-outline" href="https://maps.app.goo.gl/fmUoBmoxCXugdiNh8">Google Maps Me Kholein ↗</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== 10. FOOTER ==================== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand">
+          <span class="logo-badge">GK</span>
+          <span class="logo-text" style="color:#fff"><b>Guru Kripa</b><small style="color:#ffb27a">Tour &amp; Travels</small></span>
+        </div>
+        <p>Gaya (Bihar) ki bharosemand travel agency — safe, comfortable aur sahi daam par har safar. Sarkari registered, insured gaadiyan aur verified drivers ke saath.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#top">🏠 Home</a></li>
+          <li><a href="#fleet">🚘 Hamari Gaadiyan</a></li>
+          <li><a href="#calculator">🧮 Fare Calculator</a></li>
+          <li><a href="#how">⚡ Booking Kaise Karein</a></li>
+          <li><a href="#services">🛎️ Sevaayein</a></li>
+          <li><a href="#company">🏢 Company Details</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li>📞 <span><a href="tel:+919934290558">9934290558</a> / <a href="tel:+918936031504">8936031504</a></span></li>
+          <li>💬 <a href="https://wa.me/916203792119">+91 62037 92119 (WhatsApp)</a></li>
+          <li>✉️ <a href="mailto:sudhansuraj58355@gmail.com">sudhansuraj58355@gmail.com</a></li>
+          <li>📍 <a href="https://maps.app.goo.gl/fmUoBmoxCXugdiNh8">Jagdishpur, Abgila, Manpur, Gaya, Bihar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      © 2026 Guru Kripa Tour &amp; Travels • Proprietor: Sudhir Kumar • REGN. NO: G.Y 19744 • UDYAM-BR-12-0034407<br>
+      Made with ❤️ in Gaya, Bihar
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== 11. FLOATING BOTTOM BAR ==================== -->
+<div class="float-bar">
+  <button type="button" class="fb-btn fb-book" id="fabBook"><span>🚗</span><span class="fb-label">Book Now</span></button>
+  <a class="fb-btn fb-call" href="tel:+919934290558"><span>📞</span><span class="fb-label">Call</span></a>
+  <a class="fb-btn fb-wa" href="https://wa.me/916203792119"><span>💬</span><span class="fb-label">WhatsApp</span></a>
+</div>
+
+<!-- ==================== BOOKING MODAL (sab "Book" buttons yehi kholte hain) ==================== -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <div>
+        <h3 id="modalTitle">🚗 Gaadi Book Karein</h3>
+        <p>Form bharo — booking seedha WhatsApp par jayegi! (30 second)</p>
+      </div>
+      <button type="button" class="modal-close" id="modalClose" aria-label="Band karein">✕</button>
+    </div>
+    <div class="modal-body">
+      <form id="bookingForm" novalidate>
+        <div class="field">
+          <label for="bName">👤 Aapka Naam *</label>
+          <input type="text" id="bName" placeholder="Pura naam likhein" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="bPhone">📱 Mobile Number *</label>
+          <input type="tel" id="bPhone" placeholder="10-digit mobile number" inputmode="numeric" maxlength="14" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="bVehicle">🚘 Gaadi Chunein *</label>
+          <select id="bVehicle"></select>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label for="bFrom">📍 Kahan Se *</label>
+            <input type="text" id="bFrom" placeholder="jaise: Gaya" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="bTo">📍 Kahan Tak *</label>
+            <input type="text" id="bTo" placeholder="jaise: Patna" autocomplete="off">
+          </div>
+        </div>
+        <div class="field">
+          <label for="bDate">📅 Trip Ki Date *</label>
+          <input type="date" id="bDate">
+        </div>
+        <div class="field">
+          <label>🔄 Trip Type *</label>
+          <div class="trip-toggle">
+            <label><input type="radio" name="btrip" value="One Way" checked><span>One Way</span></label>
+            <label><input type="radio" name="btrip" value="Round Trip"><span>Round Trip</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="bNote">💬 Koi Special Baat? (optional)</label>
+          <textarea id="bNote" rows="2" placeholder="jaise: pickup point, extra luggage, bachcha seat..."></textarea>
+        </div>
+        <div class="form-error" id="formError"></div>
+        <button type="submit" class="btn btn-primary btn-lg" id="bookSubmit" style="width:100%">📲 WhatsApp Par Booking Bhejein</button>
+        <p class="modal-note">✅ Submit karte hi WhatsApp automatic khul jayega — poora message pehle se likha hua milega.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   GURU KRIPA TOUR & TRAVELS — Website Script
+   (Saara event handling addEventListener se hai — inline onclick NAHI.
+    Compatibility ke liye sirf normal function() aur string '+' use hua hai,
+    koi template literal ya arrow function NAHI.)
+   ============================================================ */
+(function () {
+  'use strict';
+
+  /* ============ SETTINGS — YAHAN APNE HISAB SE BADLEIN ============ */
+  var WA_NUMBER = '916203792119'; // WhatsApp number (country code ke saath, + sign ke bina)
+
+  /* EMAIL BACKUP (Formspree) — FREE setup (5 minute):
+     1) https://formspree.io par apni email (sudhansuraj58355@gmail.com) se free account banayein
+     2) "+ New Form" banayein → aapko ek FORM ID milegi (jaise: xqkrgvyz)
+     3) Neeche '' ki jagah apni ID likh dein:  var FORMSPREE_FORM_ID = 'xqkrgvyz';
+     Iske baad har booking ki copy aapke EMAIL par bhi aayegi (WhatsApp fail ho to backup).
+     Khaali chhoda to email backup skip ho jayega — website me koi error NAHI aayega. */
+  var FORMSPREE_FORM_ID = '';
+
+  /* WHATSAPP AUTO-SEND ke baare me (ZAROOR PADHEIN):
+     Bina paid "WhatsApp Business Cloud API" ke koi bhi website silently message
+     NAHI bhej sakti. Cloud API ke liye Meta app, access token aur SERVER chahiye
+     (token ko public website code me rakhna unsafe hai). Isliye aapke bataye
+     APPROVED FALLBACK ka use ho raha hai: wa.me link + window.location.href
+     (window.open NAHI use kiya — mobile popup-blocker use block kar deta hai).
+     User ka WhatsApp app poora likha message lekar khul jata hai — bas ek tap. */
+
+  /* ============ GAADIYAN (FLEET DATA) ============
+     PHOTO LAGANE KE LIYE: image: '' ki jagah image: 'YOUR_URL' likh dein.
+     URL dene par emoji ki jagah photo dikhegi. */
+  var VEHICLES = [
+    { name:'Maruti Dzire',    type:'Sedan',        seats:4, ac:true, mileage:22, rate:11, min:2500, icon:'🚗', popular:false, image:'' /* Vehicle image: change image:'' to image:'YOUR_URL' */ },
+    { name:'Maruti Ertiga',   type:'MUV',          seats:6, ac:true, mileage:18, rate:13, min:3000, icon:'🚕', popular:false, image:'' /* Vehicle image: change image:'' to image:'YOUR_URL' */ },
+    { name:'Mahindra Scorpio',type:'SUV',          seats:7, ac:true, mileage:14, rate:14, min:3500, icon:'🚙', popular:false, image:'' /* Vehicle image: change image:'' to image:'YOUR_URL' */ },
+    { name:'Toyota Innova',   type:'MUV',          seats:7, ac:true, mileage:12, rate:16, min:4000, icon:'🚐', popular:false, image:'' /* Vehicle image: change image:'' to image:'YOUR_URL' */ },
+    { name:'Innova Crysta',   type:'Premium MUV',  seats:7, ac:true, mileage:10, rate:19, min:5000, icon:'🚘', popular:true,  image:'' /* Vehicle image: change image:'' to image:'YOUR_URL' */ }
+  ];
+
+  /* ============ Helper functions ============ */
+  function byId(id){ return document.getElementById(id); }
+  function inr(n){ return n.toLocaleString('en-IN'); } /* 2500 → 2,500 */
+  function trimStr(s){ return (s || '').replace(/^\s+|\s+$/g,''); }
+  function mark(el){ if(el){ el.classList.add('invalid'); } }
+  function showError(elBox, msg){ elBox.textContent = msg; elBox.classList.add('show'); }
+  function hideError(elBox){ elBox.classList.remove('show'); }
+  function closestByClass(el, cls){
+    while (el && el !== document){
+      if (el.classList && el.classList.contains(cls)){ return el; }
+      el = el.parentNode;
+    }
+    return null;
+  }
+  function getTrip(name){
+    var rs = document.getElementsByName(name);
+    for (var i=0; i<rs.length; i++){ if (rs[i].checked){ return rs[i].value; } }
+    return 'One Way';
+  }
+  function setTrip(name, value){
+    var rs = document.getElementsByName(name);
+    for (var i=0; i<rs.length; i++){ rs[i].checked = (rs[i].value === value); }
+  }
+  /* '2026-08-12' → 'Wed, 12 Aug 2026' */
+  function formatDate(val){
+    var p = val.split('-');
+    if (p.length < 3){ return val; }
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var d = new Date(parseInt(p[0],10), parseInt(p[1],10)-1, parseInt(p[2],10));
+    if (isNaN(d.getTime())){ return val; }
+    return days[d.getDay()] + ', ' + parseInt(p[2],10) + ' ' + months[d.getMonth()] + ' ' + p[0];
+  }
+
+  /* ============ Vehicle dropdowns bharo (Calculator + Modal dono) ============ */
+  function fillSelects(){
+    var opts = '<option value="" disabled selected>— Gaadi Chunein —</option>';
+    for (var i=0; i<VEHICLES.length; i++){
+      opts += '<option value="'+i+'">'+VEHICLES[i].name+' ('+VEHICLES[i].seats+' Seater) — ₹'+VEHICLES[i].rate+'/km</option>';
+    }
+    byId('cVehicle').innerHTML = opts;
+    byId('bVehicle').innerHTML = opts;
+  }
+
+  /* ============ Fleet cards render ============ */
+  function renderFleet(){
+    var html = '';
+    for (var i=0; i<VEHICLES.length; i++){
+      var v = VEHICLES[i];
+      var media = v.image ? '<img src="'+v.image+'" alt="'+v.name+'">' : v.icon;
+      html += '<div class="vehicle-card reveal'+(v.popular?' popular':'')+'" data-index="'+i+'">'
+        + (v.popular ? '<div class="pop-badge">⭐ POPULAR</div>' : '')
+        + '<div class="v-icon">'+media+'</div>'
+        + '<h3>'+v.name+'</h3>'
+        + '<span class="v-type">'+v.type+'</span>'
+        + '<div class="v-specs">'
+        +   '<span>👥 '+v.seats+' Seater</span>'
+        +   '<span>❄️ '+(v.ac?'AC':'Non-AC')+'</span>'
+        +   '<span>⛽ '+v.mileage+' km/l</span>'
+        + '</div>'
+        + '<div class="v-price"><b>₹'+v.rate+'<small>/km</small></b><span>Min ₹'+inr(v.min)+'</span></div>'
+        + '<button type="button" class="btn btn-primary">Book Now 🚗</button>'
+        + '</div>';
+    }
+    byId('fleetGrid').innerHTML = html;
+  }
+
+  /* ============ BOOKING MODAL ============ */
+  var modal = byId('bookingModal');
+  var submitBtn = byId('bookSubmit');
+  var SUBMIT_LABEL = submitBtn.innerHTML;
+
+  function resetSubmit(){
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = SUBMIT_LABEL;
+  }
+
+  /* Saare "Book" buttons yehi function call karte hain.
+     opts = { vehicle: index, from: 'Gaya', to: 'Patna', trip: 'One Way' } */
+  function openBooking(opts){
+    opts = opts || {};
+    if (opts.vehicle !== undefined && opts.vehicle !== null){ byId('bVehicle').value = String(opts.vehicle); }
+    if (opts.from){ byId('bFrom').value = opts.from; }
+    if (opts.to){ byId('bTo').value = opts.to; }
+    if (opts.trip){ setTrip('btrip', opts.trip); }
+    var inv = byId('bookingForm').querySelectorAll('.invalid');
+    for (var i=0; i<inv.length; i++){ inv[i].classList.remove('invalid'); }
+    hideError(byId('formError'));
+    modal.classList.add('open');
+    document.body.classList.add('modal-open'); /* body scroll lock */
+    if (window.innerWidth > 640){ setTimeout(function(){ byId('bName').focus(); }, 250); }
+  }
+
+  function closeBooking(){
+    modal.classList.remove('open');
+    document.body.classList.remove('modal-open');
+    resetSubmit();
+  }
+
+  /* --- Booking form submit → WhatsApp (+ Email backup) --- */
+  byId('bookingForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    var name   = trimStr(byId('bName').value);
+    var phone  = byId('bPhone').value.replace(/\D/g,''); /* sirf digits */
+    if (phone.length === 12 && phone.indexOf('91') === 0){ phone = phone.slice(2); }
+    if (phone.length === 11 && phone.charAt(0) === '0'){ phone = phone.slice(1); }
+    var vIdx   = byId('bVehicle').value;
+    var from   = trimStr(byId('bFrom').value);
+    var to     = trimStr(byId('bTo').value);
+    var dateV  = byId('bDate').value;
+    var trip   = getTrip('btrip');
+    var note   = trimStr(byId('bNote').value);
+
+    /* --- Validation --- */
+    var err = '';
+    if (!name){ err = 'Kripya apna naam likhein.'; mark(byId('bName')); }
+    else if (!/^[6-9]\d{9}$/.test(phone)){ err = 'Kripya sahi 10-digit mobile number daalein.'; mark(byId('bPhone')); }
+    else if (vIdx === '' || vIdx === null){ err = 'Kripya gaadi chunein.'; mark(byId('bVehicle')); }
+    else if (!from || !to){
+      err = 'Kripya route likhein (kahan se — kahan tak).';
+      if (!from){ mark(byId('bFrom')); }
+      if (!to){ mark(byId('bTo')); }
+    }
+    else if (!dateV){ err = 'Kripya trip ki date chunein.'; mark(byId('bDate')); }
+
+    if (err){ showError(byId('formError'), '⚠️ ' + err); return; }
+    hideError(byId('formError'));
+
+    var v = VEHICLES[parseInt(vIdx,10)];
+    var route = from + ' → ' + to;
+    var dateStr = formatDate(dateV);
+
+    /* --- WhatsApp message (fixed format) --- */
+    var msg = '🚗 *NEW BOOKING — GURU KRIPA TRAVELS*\n'
+      + '━━━━━━━━━━━━━━━━━━\n'
+      + '👤 *Name:* ' + name + '\n'
+      + '📱 *Phone:* ' + phone + '\n'
+      + '🚘 *Vehicle:* ' + v.name + ' (' + v.type + ', ' + v.seats + ' Seater)\n'
+      + '📍 *Route:* ' + route + '\n'
+      + '📅 *Date:* ' + dateStr + '\n'
+      + '🔄 *Trip:* ' + trip + '\n'
+      + (note ? '💬 *Note:* ' + note + '\n' : '')
+      + '━━━━━━━━━━━━━━━━━━\n'
+      + '_via Guru Kripa Website_';
+
+    /* --- Email backup bhejo (agar Formspree ID set hai) --- */
+    sendEmailBackup({ name:name, phone:phone, vehicle:v.name, route:route, date:dateStr, trip:trip, note:note || '-' });
+
+    /* --- WhatsApp kholo: window.location.href (window.open NAHI —
+           mobile popup-blockers window.open ko block kar dete hain) --- */
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'WhatsApp khul raha hai… ✅';
+    var waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+    setTimeout(function(){ window.location.href = waUrl; }, 700);
+    setTimeout(resetSubmit, 6000); /* user wapas aaye to button ready mile */
+  });
+
+  /* --- Email backup via Formspree (free) — fail ho to bhi WhatsApp chalega --- */
+  function sendEmailBackup(d){
+    if (!FORMSPREE_FORM_ID || !window.fetch){ return; }
+    try {
+      var payload = {
+        _subject: 'New Booking — ' + d.name + ' (' + d.phone + ')',
+        name: d.name, phone: d.phone, vehicle: d.vehicle,
+        route: d.route, date: d.date, trip: d.trip, note: d.note,
+        source: 'Guru Kripa Website'
+      };
+      window.fetch('https://formspree.io/f/' + FORMSPREE_FORM_ID, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        keepalive: true
+      });
+    } catch (err) { /* ignore — WhatsApp flow pehle se chal raha hai */ }
+  }
+
+  /* ============ FARE CALCULATOR ============ */
+  var lastCalc = null; /* "Is Rate Par Book Karein" ke liye yaad rakhte hain */
+
+  byId('calcForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    var from = trimStr(byId('cFrom').value);
+    var to   = trimStr(byId('cTo').value);
+    var vIdx = byId('cVehicle').value;
+    var dist = parseFloat(byId('cDist').value);
+    var trip = getTrip('ctrip');
+
+    var err = '';
+    if (!from){ err = 'Kripya "Kahan Se" likhein.'; mark(byId('cFrom')); }
+    else if (!to){ err = 'Kripya "Kahan Tak" likhein.'; mark(byId('cTo')); }
+    else if (vIdx === '' || vIdx === null){ err = 'Kripya gaadi chunein.'; mark(byId('cVehicle')); }
+    else if (isNaN(dist) || dist <= 0){ err = 'Kripya sahi distance (KM) daalein.'; mark(byId('cDist')); }
+
+    if (err){
+      showError(byId('calcError'), '⚠️ ' + err);
+      byId('calcResult').classList.add('hidden');
+      return;
+    }
+    hideError(byId('calcError'));
+
+    var v = VEHICLES[parseInt(vIdx,10)];
+    var totalKm = Math.round(trip === 'Round Trip' ? dist * 2 : dist); /* round trip = distance × 2 */
+    var fare = totalKm * v.rate;
+    var minApplied = false;
+    if (fare < v.min){ fare = v.min; minApplied = true; } /* minimum charge rule */
+
+    byId('crFare').textContent = '₹' + inr(fare);
+    byId('crLine1').textContent = from + ' → ' + to + (trip === 'Round Trip' ? ' (Round)' : '')
+      + ' • ' + v.name + ' • ' + totalKm + ' km × ₹' + v.rate + '/km';
+    byId('crLine2').textContent = minApplied
+      ? 'Kam distance hai — minimum charge ₹' + inr(v.min) + ' lagaya gaya'
+      : (v.type + ' • ' + v.seats + ' Seater • ❄️ AC');
+    byId('calcResult').classList.remove('hidden');
+
+    lastCalc = { vehicle: parseInt(vIdx,10), from: from, to: to, trip: trip };
+    try { byId('calcResult').scrollIntoView({ behavior:'smooth', block:'nearest' }); } catch (err2) {}
+  });
+
+  /* "Is Rate Par Book Karein" → same booking modal, sab pre-filled */
+  byId('calcBook').addEventListener('click', function(){
+    if (lastCalc){ openBooking(lastCalc); } else { openBooking(); }
+  });
+
+  /* ============ BUTTON LISTENERS (sab addEventListener se) ============ */
+
+  /* Fleet card — kahin bhi click = booking form (woh gaadi auto-selected) */
+  byId('fleetGrid').addEventListener('click', function(e){
+    var card = closestByClass(e.target, 'vehicle-card');
+    if (!card){ return; }
+    openBooking({ vehicle: parseInt(card.getAttribute('data-index'), 10) });
+  });
+
+  /* Hero / How-it-works / Floating bar ke "Book" buttons */
+  byId('heroBook').addEventListener('click', function(){ openBooking(); });
+  byId('howBook').addEventListener('click', function(){ openBooking(); });
+  byId('fabBook').addEventListener('click', function(){ openBooking(); });
+
+  /* Modal band karne ke 3 tareeke: ✕ button, bahar (overlay) click, Esc key */
+  byId('modalClose').addEventListener('click', closeBooking);
+  modal.addEventListener('click', function(e){ if (e.target === modal){ closeBooking(); } });
+  document.addEventListener('keydown', function(e){
+    if ((e.key === 'Escape' || e.keyCode === 27) && modal.classList.contains('open')){ closeBooking(); }
+  });
+
+  /* Galat input type karte hi red border hat jaye */
+  var fields = document.querySelectorAll('input, select, textarea');
+  for (var fi=0; fi < fields.length; fi++){
+    fields[fi].addEventListener('input', function(){ this.classList.remove('invalid'); });
+    fields[fi].addEventListener('change', function(){ this.classList.remove('invalid'); });
+  }
+
+  /* ============ Date picker: aaj se pehle ki date BLOCK ============ */
+  function setMinDate(){
+    var t = new Date();
+    var s = t.getFullYear() + '-' + ('0' + (t.getMonth()+1)).slice(-2) + '-' + ('0' + t.getDate()).slice(-2);
+    byId('bDate').setAttribute('min', s);
+  }
+
+  /* ============ Fade-in on scroll (purane browser me sab direct dikhega) ============ */
+  function initReveal(){
+    var els = document.querySelectorAll('.reveal');
+    var i;
+    if (!('IntersectionObserver' in window)){
+      for (i=0; i<els.length; i++){ els[i].classList.add('visible'); }
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      for (var j=0; j<entries.length; j++){
+        if (entries[j].isIntersecting){
+          entries[j].target.classList.add('visible');
+          io.unobserve(entries[j].target);
+        }
+      }
+    }, { threshold: 0.1 });
+    for (i=0; i<els.length; i++){ io.observe(els[i]); }
+  }
+
+  /* ============ INIT ============ */
+  fillSelects();  /* dono vehicle dropdowns bharo */
+  renderFleet();  /* vehicle cards banao */
+  setMinDate();   /* date min = aaj */
+  initReveal();   /* scroll animations on */
+
+})();
+</script>
+</body>
+</html>
